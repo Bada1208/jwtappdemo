@@ -13,8 +13,8 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
-@MappedSuperclass
-@Data
+@MappedSuperclass//Аннотация @MappedSuperclass позволяет включать класс и его jpa аннотации в производный класс, не делая базовый класс сущностью
+@Data//All together now: A shortcut for @ToString, @EqualsAndHashCode, @Getter on all fields, @Setter on all non-final fields, and @RequiredArgsConstructor!
 public class BaseEntity {
 
     @Id
